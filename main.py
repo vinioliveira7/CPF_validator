@@ -1,5 +1,5 @@
-from digit_verification import new_cpf
 from string_processing import complete_string_processor
+from digit_verification import new_cpf
 
 
 if complete_string_processor == False:
