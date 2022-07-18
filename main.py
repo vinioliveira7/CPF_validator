@@ -1,11 +1,10 @@
-from string_processing import complete_string_processor
-from digit_verification import new_cpf
+from verifications import verification_case, validation_cpf
 
-
-if complete_string_processor == False:
-    print("CPF INVÁLIDO")
+if verification_case() and validation_cpf():
+    print("CPF VÁLIDO")
 else:
-    print("CPF VÁLIDO" if complete_string_processor() == new_cpf() else "CPF INVÁLIDO")
+    print("CPF INVÁLIDO")
 
+input("Pressione ENTER para sair...")
     
 
