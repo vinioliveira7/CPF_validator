@@ -1,10 +1,16 @@
 from verifications import verification_case, validation_cpf
+from string_processing import cpf
 
-if verification_case() and validation_cpf():
-    print("CPF VÁLIDO")
-else:
-    print("CPF INVÁLIDO")
+while(True):
+    if len(cpf) != 11:
+        print("Tamanho inválido")
+        break
 
-input("Pressione ENTER para sair...")
+    if verification_case() and validation_cpf():
+        print("CPF VÁLIDO")
+    else:
+        print("CPF INVÁLIDO")
+
+    input("Pressione ENTER para sair...")
     
 
